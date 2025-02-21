@@ -14,7 +14,9 @@ st.set_page_config(
 )
 st.title("Soccerwise Golden Boot Draft Tracker 📈")
 
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3 = st.columns(3)
+col4, col5, col6 = st.columns([4,5,6])
+
 with st.container():
     with col1:
         st.header("Team Wiebe")
@@ -41,8 +43,21 @@ with st.container():
         st.table(doyle.sort(["goals", "player_name"]))
 
     with col3:
+        st.header("Team Gass")
+        gass = dfs[2]
+        gass = gass.drop(["player_id", "team"])
+        with st.container():
+            metric1, metric2 = st.columns(2)
+            with metric1:
+                st.metric(label="Goals", value=gass.select(pl.sum("goals")))
+            with metric2:
+                st.metric(label="xG", value=gass.select(pl.sum("xgoals")))
+        st.table(gass.sort(["goals", "player_name"]))
+
+with st.container():
+    with col4:
         st.header("Team Tom/Calen")
-        scoops = dfs[2]
+        scoops = dfs[3]
         scoops = scoops.drop(["player_id", "team"])
         with st.container():
             metric1, metric2 = st.columns(2)
@@ -52,9 +67,9 @@ with st.container():
                 st.metric(label="xG", value=scoops.select(pl.sum("xgoals")))
         st.table(scoops.sort(["goals", "player_name"]))
 
-    with col4:
+    with col5:
         st.header("Producer Anders")
-        anders = dfs[3]
+        anders = dfs[4]
         anders = anders.drop(["player_id", "team"])
         with st.container():
             metric1, metric2 = st.columns(2)
@@ -64,9 +79,9 @@ with st.container():
                 st.metric(label="xG", value=anders.select(pl.sum("xgoals")))
         st.table(anders.sort(["goals", "player_name"]))
 
-    with col5:
+    with col6:
         st.header("Team Admin")
-        admin = dfs[4]
+        admin = dfs[5]
         admin = admin.drop(["player_id", "team"])
         with st.container():
             metric1, metric2 = st.columns(2)
