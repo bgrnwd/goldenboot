@@ -1,0 +1,43 @@
+[project]
+name = "goldenbootdraft.tracker"
+description = "Tracking the ETR/Soccerwise annual Golden Boot draft "
+readme = "README.md"
+license = { text = "" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Brian Greenwood" },
+]
+keywords = [
+  "soccer",
+]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "streamlit",
+  "itscalledsoccer",
+  "polars",
+]
+version = "0.0.1"
+
+[project.urls]
+Repository = "https://github.com/bgrnwd/goldenbootdraft.tracker"
+
+[dependency-groups]
+dev = [
+  "pytest",
+  "ruff"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff.lint]
+ignore = ["E501"]
+extend-select = ["I"]

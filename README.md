@@ -1,2 +1,3 @@
 # goldenbootdraft.tracker
-Tracking the ETR/Soccerwise annual Golden Boot draft
+
+Tracking the ETR/Soccerwise annual MLS Golden Boot draft
