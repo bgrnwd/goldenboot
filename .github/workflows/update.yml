@@ -1,4 +1,4 @@
-name: Update Golden Boot Standings
+name: Update Golden Boot Standings ⚽
 on:
   schedule:
     - cron: 0 23 * * 0
