@@ -22,6 +22,6 @@ jobs:
       - name: Install dependencies
         run: uv sync --all-extras --dev
       - name: Run update script
-        run: uv run update.py
+        run: uv run .github/workflows/update.py
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
