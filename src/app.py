@@ -10,12 +10,15 @@ df = pl.read_csv(f"{parent}/standings.csv")
 dfs = df.partition_by("team")
 
 st.set_page_config(
-    layout="wide", page_title="Golden Boot Draft Tracker", page_icon="🦉"
+    layout="wide",
+    page_title="Golden Boot Draft Tracker",
+    page_icon="🦉",
+    initial_sidebar_state="expanded",
 )
 st.title("Soccerwise Golden Boot Draft Tracker 📈")
 
 col1, col2, col3 = st.columns(3)
-col4, col5, col6 = st.columns([4,5,6])
+col4, col5, col6 = st.columns([4, 5, 6])
 
 with st.container():
     with col1:
@@ -91,7 +94,7 @@ with st.container():
                 st.metric(label="xG", value=admin.select(pl.sum("xgoals")))
         st.table(admin.sort(["goals", "player_name"]))
 
-st.caption("Data is updated weekly on Sunday nights at 11:00PM ET")
+st.caption("Data is updated every Monday and Thursday morning at 3:00AM ET")
 st.caption(
     "The wordmarks, logos, trade names, packaging and designs of MLS, SUM, the current and former MLS member clubs are the exclusive property of MLS or their affiliates."
 )
