@@ -31,7 +31,7 @@ with st.container():
                 st.metric(label="Goals", value=wiebe.select(pl.sum("goals")))
             with metric2:
                 st.metric(label="xG", value=wiebe.select(pl.sum("xgoals")))
-        st.table(wiebe.sort(["goals", "player_name"]))
+        st.table(wiebe.sort(["goals", "player_name"], descending=True))
 
     with col2:
         st.header("Team Doyle")
@@ -43,7 +43,7 @@ with st.container():
                 st.metric(label="Goals", value=doyle.select(pl.sum("goals")))
             with metric2:
                 st.metric(label="xG", value=doyle.select(pl.sum("xgoals")))
-        st.table(doyle.sort(["goals", "player_name"]))
+        st.table(doyle.sort(["goals", "player_name"], descending=True))
 
     with col3:
         st.header("Team Gass")
@@ -55,7 +55,7 @@ with st.container():
                 st.metric(label="Goals", value=gass.select(pl.sum("goals")))
             with metric2:
                 st.metric(label="xG", value=gass.select(pl.sum("xgoals")))
-        st.table(gass.sort(["goals", "player_name"]))
+        st.table(gass.sort(["goals", "player_name"], descending=True))
 
 with st.container():
     with col4:
@@ -68,7 +68,7 @@ with st.container():
                 st.metric(label="Goals", value=scoops.select(pl.sum("goals")))
             with metric2:
                 st.metric(label="xG", value=scoops.select(pl.sum("xgoals")))
-        st.table(scoops.sort(["goals", "player_name"]))
+        st.table(scoops.sort(["goals", "player_name"], descending=True))
 
     with col5:
         st.header("Producer Anders")
@@ -80,7 +80,7 @@ with st.container():
                 st.metric(label="Goals", value=anders.select(pl.sum("goals")))
             with metric2:
                 st.metric(label="xG", value=anders.select(pl.sum("xgoals")))
-        st.table(anders.sort(["goals", "player_name"]))
+        st.table(anders.sort(["goals", "player_name"], descending=True))
 
     with col6:
         st.header("Team Admin")
@@ -92,7 +92,7 @@ with st.container():
                 st.metric(label="Goals", value=admin.select(pl.sum("goals")))
             with metric2:
                 st.metric(label="xG", value=admin.select(pl.sum("xgoals")))
-        st.table(admin.sort(["goals", "player_name"]))
+        st.table(admin.sort(["goals", "player_name"], descending=True))
 
 st.caption("Data is updated every Monday and Thursday morning at 3:00AM ET")
 st.caption(
