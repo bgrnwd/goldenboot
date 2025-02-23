@@ -9,6 +9,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
