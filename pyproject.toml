@@ -22,6 +22,7 @@ dependencies = [
   "streamlit",
   "itscalledsoccer",
   "polars",
+  "great_tables"
 ]
 version = "0.0.1"
 
