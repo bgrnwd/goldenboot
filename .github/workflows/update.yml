@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: 0 8 * * 1
     - cron: 0 8 * * 4
+    - cron: 0 8 * * 0
   workflow_dispatch: ~
 permissions:
   contents: write
@@ -27,3 +28,9 @@ jobs:
         run: uv run .github/workflows/update.py
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: |
+            data: update standings
+          branch: update-standings
+          title: Update standings
+          reviewers: bgrnwd
