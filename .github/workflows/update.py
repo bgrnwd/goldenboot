@@ -14,7 +14,7 @@ client = AmericanSoccerAnalysis(lazy_load=False)
 for index, player in enumerate(players.to_list()):
     if player:
         xgoal = client.get_player_xgoals(
-            player_names=player, leagues="mls", season_name="2025"
+            player_ids=player, leagues="mls", season_name="2025"
         )
         df[index, "goals"] = xgoal.get("goals", 0)
         df[index, "xgoals"] = xgoal.get("xgoals", 0)
