@@ -14,46 +14,57 @@ goals = "goals"
 goals_label = goals.capitalize()
 xgoals = "xgoals"
 xgoals_label = "xG"
+assists = "assists"
+assists_label = assists.capitalize()
 columns_to_drop = ["player_id", "team"]
 sort_by_columns = [goals, xgoals]
 
 wiebe = dfs[0].drop(columns_to_drop).sort(sort_by_columns, descending=True)
 wiebe_goals = wiebe.select(pl.sum(goals))
 wiebe_xgoals = wiebe.select(pl.sum(xgoals))[xgoals].round(2)
+wiebe_assists = wiebe.select(pl.sum(assists))
 
 doyle = dfs[1].drop(columns_to_drop).sort(sort_by_columns, descending=True)
 doyle_goals = doyle.select(pl.sum(goals))
 doyle_xgoals = doyle.select(pl.sum(xgoals))[xgoals].round(2)
+doyle_assists = doyle.select(pl.sum(assists))
 
 gass = dfs[2].drop(columns_to_drop).sort(sort_by_columns, descending=True)
 gass_goals = gass.select(pl.sum(goals))
 gass_xgoals = gass.select(pl.sum(xgoals))[xgoals].round(2)
+gass_assists = gass.select(pl.sum(assists))
 
 scoops = dfs[3].drop(columns_to_drop).sort(sort_by_columns, descending=True)
 scoops_goals = scoops.select(pl.sum(goals))
 scoops_xgoals = scoops.select(pl.sum(xgoals))[xgoals].round(2)
+scoops_assists = scoops.select(pl.sum(assists))
 
 anders = dfs[4].drop(columns_to_drop).sort(sort_by_columns, descending=True)
 anders_goals = anders.select(pl.sum(goals))
 anders_xgoals = anders.select(pl.sum(xgoals))[xgoals].round(2)
+anders_assists = anders.select(pl.sum(assists))
 
 admin = dfs[5].drop(columns_to_drop).sort(sort_by_columns, descending=True)
 admin_goals = admin.select(pl.sum(goals))
 admin_xgoals = admin.select(pl.sum(xgoals))[xgoals].round(2)
+admin_assists = admin.select(pl.sum(assists))
 
 
 def build_standings_df(dfs: list[pl.DataFrame]) -> pl.DataFrame:
     participants = []
     goals = []
     xgoals = []
+    assists = []
     for df in dfs:
         participant_name = df["team"][0]
         participants.append(participant_name)
         participant_goals = df.select(pl.sum("goals"))["goals"][0]
         participant_xgoals = df.select(pl.sum("xgoals"))["xgoals"][0]
+        participant_assists = df.select(pl.sum("assists"))["assists"][0]
         goals.append(participant_goals)
         xgoals.append(participant_xgoals)
-    return pl.DataFrame({"team": participants, "goals": goals, "xG": xgoals})
+        assists.append(participant_assists)
+    return pl.DataFrame({"team": participants, "goals": goals, "xG": xgoals, "assists": assists})
 
 
 def create_team_gt(df: pl.DataFrame) -> str:
@@ -61,9 +72,9 @@ def create_team_gt(df: pl.DataFrame) -> str:
         GT(df)
         .fmt_number(columns=xgoals, decimals=2)
         .cols_label(
-            {"player_name": "Player", "goals": goals_label, "xgoals": xgoals_label}
+            {"player_name": "Player", "goals": goals_label, "xgoals": xgoals_label, "assists": assists_label}
         )
-        .data_color(columns=[goals, xgoals], palette="Oranges")
+        .data_color(columns=[goals, xgoals, assists], palette="Oranges")
         .as_raw_html()
     )
 
@@ -72,8 +83,8 @@ standings = build_standings_df(dfs).sort([goals, xgoals_label], descending=True)
 standings_html = (
     GT(standings)
     .fmt_number(columns=xgoals_label, decimals=2)
-    .cols_label({"team": "Team", "goals": goals_label})
-    .data_color(columns=[goals, xgoals_label], palette="Greens")
+    .cols_label({"team": "Team", "goals": goals_label, "assists": assists_label})
+    .data_color(columns=[goals, xgoals_label, assists], palette="Greens")
     .as_raw_html()
 )
 
