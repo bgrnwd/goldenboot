@@ -1,67 +1,67 @@
-player_id,player_name,team,goals,xgoals
-vzqowm7qap,Lionel Messi,Wiebe,0,0.5534
-BLMvzyGjMx,Emmannuel Latte Lath,Wiebe,2,0.8715
-NPqxeGOZQ9,Daniel Gazdag,Wiebe,0,0.0
-kRQaovVo5K,Gabriel Pec,Wiebe,0,0.127
-,Chucky Lozano,Wiebe,0,0.0
-Oa5wVYvWM1,Ezequiel Ponce,Wiebe,0,0.3673
-aDQ0PnvBQE,Djordje Mihalovic,Wiebe,0,0.0
-9vQ22BR7QK,Jesus Ferreira,Wiebe,0,0.0
-KPqj71NyQ6,Sam Surridge,Wiebe,0,1.1812
-Oa5wV17gM1,Martin Ojeda,Wiebe,0,0.23090000000000002
-e7Mz913GQr,Aaron Long,Wiebe,0,0.0
-odMXRxV2qY,Denis Bouanga,Doyle,0,0.7066
-zeQZKbYMKw,Luis Suarez,Doyle,0,0.3785
-Oa5w0Kv4q1,Patrick Agyemang,Doyle,0,0.0
-0Oq630dXQ6,Myrto Uzuni,Doyle,0,0.0
-gOMn6n8XMw,Christian Ramirez,Doyle,0,0.0
-KXMekX42q6,Dejan Joveljic,Doyle,0,0.0
-eVq3yp76MW,Alonso Martinez,Doyle,1,0.1945
-9z5ka8adQA,Ryan Gauld,Doyle,1,0.447
-eV5DB6nQKn,Choupo-Moting,Doyle,0,0.44
-KPqj7K72Q6,Cedric Teuchert,Doyle,0,0.1459
-kRQabvYbMK,Walker Zimmerman,Doyle,0,0.0
-315VPR6vQ9,Peter Musa,Gass,1,0.5147
-KAqBNdyZqb,Kelvin Yaboah,Gass,0,0.33290000000000003
-p6qbOeRXQ0,Jordan Morris,Gass,2,0.9898
-wvq9go6aMW,Diego Rossi,Gass,2,0.4091
-Oa5wY8RXQ1,Hany Mukhtar,Gass,0,0.201
-,Leo Campana,Gass,0,0.0
-4wM46RpqjB,Emil Forsberg,Gass,0,0.2087
-gjMN614vMK,Ramiro Enrique,Gass,0,0.0
-a35ry7P2ML,Joao Klauss,Gass,0,0.28750000000000003
-EGMPlOjkMa,Felipe Mora,Gass,0,0.0
-gjMNvrO4MK,Steven Moreira,Gass,0,0.0
-gjMNrbKMKp,Christian Benteke,Tom/Calen,1,0.1582
-kRQa2AvjMK,Evander,Tom/Calen,0,0.0604
-raMyAywlMd,Miguel Almiron,Tom/Calen,0,0.0587
-,Lucho Acosta,Tom/Calen,0,0.0
-9z5k7rej5A,Brandon Vazquez,Tom/Calen,0,0.256
-,Wilfred Zaha,Tom/Calen,0,0.0
-gOMnRE8BMw,Marcel Hartel,Tom/Calen,0,0.0729
-aDQ0PJpPQE,Tai Baribo,Tom/Calen,2,1.045
-xW5pxANJ5g,Marcus Ingvartsen,Tom/Calen,0,0.0514
-gOMn6oPAMw,Federico Bernardeschi,Tom/Calen,1,0.9261
-jYQJzWGyQG,Miles Robinson,Tom/Calen,0,0.0
-vzqo7zWLqa,Hugo Cuypers,Producer Anders,0,0.3259
-raMyAWZAMd,Kevin Denkey,Producer Anders,1,0.8125
-,Chicho Arango,Producer Anders,0,0.0
-eVq3v9n5WO,Olivier Giroud,Producer Anders,0,0.2548
-,Jonathan Rodriguez,Producer Anders,0,0.0
-NWMWlWle5l,Brian White,Producer Anders,0,1.1223
-,Rafa Navarro,Producer Anders,0,0.0
-p6qbOn3DQ0,Jonathan Bamba,Producer Anders,0,0.09910000000000001
-XVqKG1XWq0,Simon Becher,Producer Anders,0,1.2359
-,Giacomo Vrioni,Producer Anders,0,0.0
-4wM4JGblqj,Sean Nealis,Producer Anders,0,0.0
-,Joseph Paintsil,Admin,0,0.0
-e7Mz9GBOQr,Mikael Uhre,Admin,1,0.0949
-BLMv1GlQxe,Albert Rusnak,Admin,0,0.45
-2lqRR4Rxqr,Lewis Morgan,Admin,0,0.2968
-7VqG0ZGYQv,Diego Luna,Admin,0,0.5313
-,Sang Bin Jeong,Admin,0,0.0
-vzqorrRk5a,Carlos Gil,Admin,0,0.0303
-N6Mm76gZqE,Josef Martinez,Admin,0,0.0574
-,Leo Afonso,Admin,0,0.0
-gpMOeGdrqz,Antoine Griezmann,Admin,1,0.5191
-eV5DL18a5K,Jakob Glesnes,Admin,0,0.0285
+player_id,player_name,team,goals,xgoals,assists
+vzqowm7qap,Lionel Messi,Wiebe,0,0.5534,0
+BLMvzyGjMx,Emmannuel Latte Lath,Wiebe,2,0.8715,0
+Xj5Y68Olqb,Daniel Gazdag,Wiebe,0,0.0,0
+kRQaovVo5K,Gabriel Pec,Wiebe,0,0.127,0
+gjMNRerBMK,Chucky Lozano,Wiebe,0,0.0,0
+Oa5wVYvWM1,Ezequiel Ponce,Wiebe,0,0.3673,0
+aDQ0PnvBQE,Djordje Mihalovic,Wiebe,0,0.0,0
+9vQ22BR7QK,Jesus Ferreira,Wiebe,0,0.0,0
+KPqj71NyQ6,Sam Surridge,Wiebe,0,1.1812,0
+Oa5wV17gM1,Martin Ojeda,Wiebe,0,0.23090000000000002,0
+e7Mz913GQr,Aaron Long,Wiebe,0,0.0,0
+odMXRxV2qY,Denis Bouanga,Doyle,0,0.7066,0
+zeQZKbYMKw,Luis Suarez,Doyle,0,0.3785,0
+Oa5w0Kv4q1,Patrick Agyemang,Doyle,0,0.0,0
+Pk5Lggy7MO,Myrto Uzuni,Doyle,0,0.0,0
+gOMn6n8XMw,Christian Ramirez,Doyle,0,0.0,0
+KXMekX42q6,Dejan Joveljic,Doyle,0,0.0,0
+eVq3yp76MW,Alonso Martinez,Doyle,1,0.1945,0
+9z5ka8adQA,Ryan Gauld,Doyle,1,0.447,0
+eV5DB6nQKn,Choupo-Moting,Doyle,0,0.44,0
+KPqj7K72Q6,Cedric Teuchert,Doyle,0,0.1459,0
+kRQabvYbMK,Walker Zimmerman,Doyle,0,0.0,0
+315VPR6vQ9,Petar Musa,Gass,1,0.5147,0
+KAqBNdyZqb,Kelvin Yaboah,Gass,0,0.33290000000000003,0
+p6qbOeRXQ0,Jordan Morris,Gass,2,0.9898,0
+wvq9go6aMW,Diego Rossi,Gass,2,0.4091,0
+Oa5wY8RXQ1,Hany Mukhtar,Gass,0,0.201,0
+KAqBNEpWqb,Leo Campana,Gass,0,0.0,0
+4wM46RpqjB,Emil Forsberg,Gass,0,0.2087,0
+gjMN614vMK,Ramiro Enrique,Gass,0,0.0,0
+a35ry7P2ML,Joao Klauss,Gass,0,0.28750000000000003,0
+EGMPlOjkMa,Felipe Mora,Gass,0,0.0,0
+gjMNvrO4MK,Steven Moreira,Gass,0,0.0,0
+gjMNrbKMKp,Christian Benteke,Tom/Calen,1,0.1582,0
+kRQa2AvjMK,Evander,Tom/Calen,0,0.0604,0
+raMyAywlMd,Miguel Almiron,Tom/Calen,0,0.0587,0
+ljqE2VkOQx,Lucho Acosta,Tom/Calen,0,0.0,0
+9z5k7rej5A,Brandon Vazquez,Tom/Calen,0,0.256,0
+KAqBxEWMbg,Wilfred Zaha,Tom/Calen,0,0.0,0
+gOMnRE8BMw,Marcel Hartel,Tom/Calen,0,0.0729,0
+aDQ0PJpPQE,Tai Baribo,Tom/Calen,2,1.045,0
+xW5pxANJ5g,Marcus Ingvartsen,Tom/Calen,0,0.0514,0
+gOMn6oPAMw,Federico Bernardeschi,Tom/Calen,1,0.9261,0
+jYQJzWGyQG,Miles Robinson,Tom/Calen,0,0.0,0
+vzqo7zWLqa,Hugo Cuypers,Producer Anders,0,0.3259,0
+raMyAWZAMd,Kevin Denkey,Producer Anders,1,0.8125,0
+Xj5Y8R7AMb,Chicho Arango,Producer Anders,0,0.0,0
+eVq3v9n5WO,Olivier Giroud,Producer Anders,0,0.2548,0
+eVq3jolG5W,Jonathan Rodriguez,Producer Anders,0,0.0,0
+NWMWlWle5l,Brian White,Producer Anders,0,1.1223,0
+OlMleWzR5L,Rafa Navarro,Producer Anders,0,0.0,0
+p6qbOn3DQ0,Jonathan Bamba,Producer Anders,0,0.09910000000000001,0
+XVqKG1XWq0,Simon Becher,Producer Anders,0,1.2359,0
+2vQ1N6yLMr,Giacomo Vrioni,Producer Anders,0,0.0,0
+4wM4JGblqj,Sean Nealis,Producer Anders,0,0.0,0
+7vQ7J8JYqD,Joseph Paintsil,Admin,0,0.0,0
+e7Mz9GBOQr,Mikael Uhre,Admin,1,0.0949,0
+BLMv1GlQxe,Albert Rusnak,Admin,0,0.45,0
+2lqRR4Rxqr,Lewis Morgan,Admin,0,0.2968,0
+7VqG0ZGYQv,Diego Luna,Admin,0,0.5313,0
+gOMnl3y6qw,Sang Bin Jeong,Admin,0,0.0,0
+vzqorrRk5a,Carlos Gil,Admin,0,0.0303,0
+N6Mm76gZqE,Josef Martinez,Admin,0,0.0574,0
+jYQJaDnDqG,Leo Afonso,Admin,0,0.0,0
+,Antoine Griezmann,Admin,0,0.0,0
+eV5DL18a5K,Jakob Glesnes,Admin,0,0.0285,0
