@@ -71,8 +71,9 @@ def create_team_gt(df: pl.DataFrame) -> str:
     return (
         GT(df)
         .fmt_number(columns=xgoals, decimals=2)
+        .fmt_image("club_logo")
         .cols_label(
-            {"player_name": "Player", "goals": goals_label, "xgoals": xgoals_label, "assists": assists_label}
+            {"player_name": "Player", "goals": goals_label, "xgoals": xgoals_label, "assists": assists_label, "club_logo": "Club"}
         )
         .data_color(columns=[goals, xgoals, assists], palette="Oranges")
         .as_raw_html()
