@@ -1,6 +1,6 @@
 [project]
 name = "goldenbootdraft.tracker"
-description = "Tracking the ETR/Soccerwise annual Golden Boot draft "
+description = "Tracking the annual Soccerwise Golden Boot competition"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.9"
