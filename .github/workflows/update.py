@@ -19,7 +19,7 @@ for index, player in enumerate(players.to_list()):
         xgoal: pl.DataFrame = client.get_player_xgoals(
             player_ids=player, leagues="mls", season_name="2025"
         )
-        df[index, "goals"] = xgoal.getare("goals", 0)
+        df[index, "goals"] = xgoal.get("goals", 0)
         df[index, "xgoals"] = xgoal.get("xgoals", 0)
         df[index, "assists"] = xgoal.get("primary_assists", 0)
 
