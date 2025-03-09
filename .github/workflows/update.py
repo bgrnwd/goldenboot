@@ -28,7 +28,7 @@ with open(standings_py_file, "r") as f:
     content = f.read()
 updated = datetime.now().strftime("%A %B %d, %Y at %I:%M:%S %p")
 new_content = re.sub(
-    "\\w+day \\w+ \\d, \\d{4} at \\d{2}:\\d{2}:\\d{2} [AP]M", updated, content
+    "\\w+day \\w+ \\d{2}, \\d{4} at \\d{2}:\\d{2}:\\d{2} [AP]M", updated, content
 )
 with open(standings_py_file, "w+") as f:
     f.write(new_content)
